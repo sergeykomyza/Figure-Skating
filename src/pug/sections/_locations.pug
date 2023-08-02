@@ -1,0 +1,25 @@
+-
+	const locations = [
+		{img: 'location-1.jpg', name: 'Ледовый каток «Молодёжка»',     adress: 'Москва, м.Молодёжная, <br> ул. Молодогвардейская, 63-65'},
+		{img: 'location-2.jpg', name: 'Ледовый каток «Спорт Станция»', adress: 'Москва, м. Крылатское, ул. Крылатская, д.2, стр.5'},
+		{img: 'location-3.jpg', name: 'Ледовый каток «Буревестник»',   adress: 'Москва, м.Фрунзенская, ул. Плющиха, д.57'},
+		{img: 'location-1.jpg', name: 'Ледовый каток «МСА Лужники»',     adress: 'Москва, м.Молодёжная, <br> ул. Молодогвардейская, 63-65'},
+	]
+
+section.locations#locations 
+	.container 
+		h3.title.groups__title Где находятся #[b наши катки]
+		.locations__box
+			.swiper.js-sliderLocations  
+				.swiper-wrapper
+					each item, i in locations 
+						.preview.swiper-slide
+							figure.preview__imgbox
+								img.preview__img.preview__img--bg(src="img/" + item.img, alt="@")
+							.preview__info 
+								.preview__title= item.name 
+								p.preview__text.preview__text--location !{item.adress} 
+								button.preview__morebtn(data-fancybox=`timetable` data-src=`#timetable${i}`) Посмотреть расписание
+								button.button.preview__record Проложить маршрут
+				.swiper-pagination
+					

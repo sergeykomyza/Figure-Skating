@@ -1,0 +1,39 @@
+-
+	const acc1 = [
+		'С какого возраста?',
+		'Для кого подходит оздоровительная группа?',
+		'Для кого подходит спортивная группа?',
+		'Участие в соревнованиях',
+		'Где можно узнать расписание школы?',
+		'Какие документы необходимы подготовить для тренировок'
+	]
+	const acc2 = [
+		'Где можно узнать стоимость тренировок?',
+		'Как проходят занятия / сколько длятся занятия',
+		'Как работает школа?',
+		'Пропущенные тренировки по абонементу',
+		'Что необходимом для тренировок'
+	]
+
+section.faq 
+	.container 
+		h6.title.faq__title #[b Ответы] на популярные вопросы
+		.accordeon
+			.accordeon__col
+				each item in acc1
+					.accordeon__item
+						.accordeon__header 
+							p= item
+							svg(width='22' height='22' viewBox='0 0 22 22' fill='none')
+								path(d='M18.1201 7.57099C18.0385 7.35614 17.8408 7.13271 17.6432 7.04247C17.4283 6.94364 17.0717 6.93935 16.8526 7.02528C16.7408 7.07255 15.8342 7.95341 13.8491 9.93856L11.0002 12.7831L8.15569 9.93856C6.16624 7.95341 5.2596 7.07255 5.14788 7.02528C4.93304 6.93935 4.5721 6.94364 4.35726 7.04247C4.05647 7.17997 3.82444 7.54521 3.82444 7.88466C3.82444 8.26708 3.73421 8.16396 7.17171 11.6186C9.39749 13.853 10.476 14.9015 10.592 14.9573C10.8155 15.0604 11.185 15.0604 11.4084 14.9573C11.5244 14.9015 12.603 13.853 14.8287 11.6186C17.6389 8.7956 18.0815 8.33153 18.1244 8.18114C18.1889 7.962 18.1846 7.75575 18.1201 7.57099Z' fill='#2A688F')
+						.accordeon__content
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nam consequatur magnam molestiae architecto rerum, non voluptatum magni pariatur in vel dolore accusantium reiciendis omnis, eveniet ipsa laboriosam quidem fugit?
+			.accordeon__col 
+				each item in acc2
+					.accordeon__item
+						.accordeon__header 
+							p= item
+							svg(width='22' height='22' viewBox='0 0 22 22' fill='none')
+								path(d='M18.1201 7.57099C18.0385 7.35614 17.8408 7.13271 17.6432 7.04247C17.4283 6.94364 17.0717 6.93935 16.8526 7.02528C16.7408 7.07255 15.8342 7.95341 13.8491 9.93856L11.0002 12.7831L8.15569 9.93856C6.16624 7.95341 5.2596 7.07255 5.14788 7.02528C4.93304 6.93935 4.5721 6.94364 4.35726 7.04247C4.05647 7.17997 3.82444 7.54521 3.82444 7.88466C3.82444 8.26708 3.73421 8.16396 7.17171 11.6186C9.39749 13.853 10.476 14.9015 10.592 14.9573C10.8155 15.0604 11.185 15.0604 11.4084 14.9573C11.5244 14.9015 12.603 13.853 14.8287 11.6186C17.6389 8.7956 18.0815 8.33153 18.1244 8.18114C18.1889 7.962 18.1846 7.75575 18.1201 7.57099Z' fill='#2A688F')
+						.accordeon__content
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nam consequatur magnam molestiae architecto rerum, non voluptatum magni pariatur in vel dolore accusantium reiciendis omnis, eveniet ipsa laboriosam quidem fugit?

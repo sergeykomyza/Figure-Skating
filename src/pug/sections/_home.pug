@@ -1,0 +1,13 @@
+section.home
+	.container 
+		h1.home__title Школа фигурного катания в Москве #[br] Обучение #[span.color-blue детей с 4-х лет]
+		p.home__tagtitle #[b Запишитесь на пробное занятие] и узнайте #[br] подробнее о начальной подготовке юных фигуристов
+		.home__advantages 
+			each item in ['Укрепляет и развивает <br> растущий организм','Разработано <br> для детей от 3 лет','Полностью <br> безопасно']
+				.home-advantage 
+					img.home-advantage__icon(src="img/icon-snowflake.svg", alt="icon")
+					b.home-advantage__text !{item}
+		.home-record
+			button.button.home-record__button(data-fancybox="record" data-src="#record") Записаться на занятие
+			.home-record__text Просто попробуйте, а потом #[br] #[b решите, понравилось ли ребенку]
+	img.gradient(src="img/home-gradient.webp" alt="@")

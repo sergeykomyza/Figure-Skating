@@ -1,0 +1,16 @@
+section.record
+	img.gradient(src="img/home-gradient.webp" alt="@")
+	.container 
+		.record__box 
+			.record__content 
+				.record__info Это бесплатно
+				h4.record__title Запишитесь #[br] на пробное #[br] занятие
+				.record__tagtitle #[b Посмотрите наше #[br] видео] как проходят #[br] тренировки по #[br] фигурному катанию
+					a.record__play(data-fancybox href="#video")
+						img(src="img/play.png", alt="@")
+			.record__form 
+				include ./../layouts/_form.pug
+
+#video.video(style="display:none")
+	.video__box 
+		iframe(src='https://www.youtube.com/embed/I8_B9AaCWNY' title='Камила Валиева. Произвольная программа (05.03.2023)' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')

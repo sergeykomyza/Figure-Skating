@@ -1,0 +1,31 @@
+form.form(action="#")
+	.form__item 
+		.form__fieldname Какой возраст вашего ребенка?
+		.form__choose
+			label.form__label
+				input.form__check(type="radio" name="age")
+				span.form__val 3-4 года
+			label.form__label
+				input.form__check(type="radio" name="age")
+				span.form__val 5-8 лет
+			label.form__label
+				input.form__check(type="radio" name="age")
+				span.form__val +8 лет
+	.form__item 
+		.form__fieldname Когда вам удобно заниматься?
+		.form__choose
+			label.form__label
+				input.form__check(type="radio" name="time")
+				span.form__val до 12:00
+			label.form__label
+				input.form__check(type="radio" name="time")
+				span.form__val после 12:00
+	.form__fields 
+		input.form__input(type="text" placeholder="Как вас зовут?")
+		input.form__input.js-maskPhone(type="text" placeholder="Ваш номер телефона")
+		button.button.form__button Записаться сейчас
+	.agree
+		label.agree__wrap
+			input.agree__input(type="checkbox" checked autocomplete="off")
+			span.agree__checkbox
+			span.agree__text Нажимая на кнопку, вы соглашаетесь с #[br] #[a(href="") политикой конфиденциальности ]

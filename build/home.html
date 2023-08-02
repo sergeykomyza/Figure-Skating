@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Фигурное катание</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div class="container"> 
+          <div class="header__box"> 
+            <div class="logo"> <img class="logo__img" src="img/logo.svg" alt="@"/>
+              <div class="logo__text"> <b class="logo__name">Хрустальный конек</b><span class="logo__info">Спортивная школа по <br/> фигурному катанию</span></div>
+            </div>
+            <div class="header-connect header__connect">
+              <div class="header-connect__text"> <b class="header-connect__title">Есть вопрос ?</b><span class="header-connect__tagtitle">Задайте online</span></div>
+              <div class="header-connect__social social"> <a class="social__link" href="#"><img class="social__icon" src="img/icon-whatsapp.svg" alt="@"/></a><a class="social__link" href="#"><img class="social__icon" src="img/icon-telegram.svg" alt="@"/></a><a class="social__link" href="#"><img class="social__icon" src="img/icon-youtube.svg" alt="@"/></a>
+              </div>
+            </div>
+            <div class="header-email header__email"> <span class="header-email__name">Пишите нам</span><a class="header-email__adress" href="mailto:xkonek-eis@yandex.ru">xkonek-eis@yandex.ru</a></div>
+            <div class="header-phone header__phone"><span class="header-phone__name">Ежедневно с 09:00 до 18:00</span><a class="header-phone__number" href="+79250837222">+7 (925) 083-72-22</a></div>
+            <div class="header__burger js-mMenuOpen"> 
+              <div class="burger"><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="nav js-mMenu">
+        <div class="nav__menu">
+          <div class="nav__head"> 
+            <div class="nav-logo"> <img class="nav-logo__img" src="img/logo.svg" alt="@"/>
+              <div class="nav-logo__text"><b class="nav-logo__name">Хрустальный конек</b><span class="nav-logo__info">Спортивная школа по <br/> фигурному катанию</span></div>
+            </div>
+            <button class="nav__close js-mMenuClose"> <img src="img/icon-close.svg" alt="@"/></button>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item"> <a class="nav__link js-scrollToSection" href="#about">О школе </a></li>
+            <li class="nav__item"> <a class="nav__link js-scrollToSection" href="#locations">Катки</a></li>
+            <li class="nav__item"> <a class="nav__link js-scrollToSection" href="#groups">Услуги</a></li>
+            <li class="nav__item"> <a class="nav__link js-scrollToSection" href="#coach">Наши тренеры</a></li>
+            <li class="nav__item"> <a class="nav__link js-scrollToSection" href="#">Новости</a></li>
+            <li class="nav__item"> <a class="nav__link js-scrollToSection" href="#gallery">Фотогалерея</a></li>
+            <li class="nav__item"> <a class="nav__link js-scrollToSection" href="#contacts">Контакты</a></li>
+          </ul>
+          <div class="header-phone nav__phone"><span class="header-phone__name">Ежедневно с 09:00 до 18:00</span><a class="header-phone__number" href="+79250837222">+7 (925) 083-72-22</a></div>
+          <div class="header-email nav__email"> <span class="header-email__name">Пишите нам</span><a class="header-email__adress" href="mailto:xkonek-eis@yandex.ru">xkonek-eis@yandex.ru </a></div>
+          <div class="header-connect nav__connect">
+            <div class="header-connect__text"> <b class="header-connect__title">Есть вопрос ?</b><span class="header-connect__tagtitle">Задайте online</span></div>
+            <div class="header-connect__social social"> <a class="social__link" href="#"><img class="social__icon" src="img/icon-whatsapp.svg" alt="@"/></a><a class="social__link" href="#"><img class="social__icon" src="img/icon-telegram.svg" alt="@"/></a><a class="social__link" href="#"><img class="social__icon" src="img/icon-youtube.svg" alt="@"/></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="home">
+      <div class="container"> 
+        <h1 class="home__title">Школа фигурного катания в Москве <br/> Обучение <span class="color-blue">детей с 4-х лет</span></h1>
+        <p class="home__tagtitle"><b>Запишитесь на пробное занятие</b> и узнайте <br/> подробнее о начальной подготовке юных фигуристов</p>
+        <div class="home__advantages"> 
+          <div class="home-advantage"> <img class="home-advantage__icon" src="img/icon-snowflake.svg" alt="icon"/><b class="home-advantage__text">Укрепляет и развивает <br> растущий организм</b></div>
+          <div class="home-advantage"> <img class="home-advantage__icon" src="img/icon-snowflake.svg" alt="icon"/><b class="home-advantage__text">Разработано <br> для детей от 3 лет</b></div>
+          <div class="home-advantage"> <img class="home-advantage__icon" src="img/icon-snowflake.svg" alt="icon"/><b class="home-advantage__text">Полностью <br> безопасно</b></div>
+        </div>
+        <div class="home-record">
+          <button class="button home-record__button" data-fancybox="record" data-src="#record">Записаться на занятие</button>
+          <div class="home-record__text">Просто попробуйте, а потом <br/> <b>решите, понравилось ли ребенку</b></div>
+        </div>
+      </div><img class="gradient" src="img/home-gradient.webp" alt="@"/>
+    </section>
+    <div class="advantages"> 
+      <div class="container"> 
+        <div class="advantages__box"> 
+          <div class="advantage"><b class="advantage__title">Удобное расписание занятий</b>
+            <p class="advantage__text">Без труда удастся встроить в учебный или рабочий график</p><img class="advantage__img" src="img/advantage-1.webp" alt=""/>
+          </div>
+          <div class="advantage"><b class="advantage__title">Дипломированные специалисты</b>
+            <p class="advantage__text">Мастера спорта, действующие судьи, талантливые выпускники спортивных вузов</p><img class="advantage__img" src="img/advantage-2.webp" alt=""/>
+          </div>
+          <div class="advantage"><b class="advantage__title">Низкая стоимость</b>
+            <p class="advantage__text">С возможностью докатывать пропущенные уроки бесплатно на любой из площадок клуба</p><img class="advantage__img" src="img/advantage-3.webp" alt=""/>
+          </div>
+          <div class="advantage"><b class="advantage__title">Четыре ледовых площадок</b>
+            <p class="advantage__text">В разных уголках Москвы: «Лужники», «Буревестник», «Молодёжка», «Крылатское».</p><img class="advantage__img" src="img/advantage-4.webp" alt=""/>
+          </div>
+          <div class="advantage"><b class="advantage__title">Награды и соревнования </b>
+            <p class="advantage__text">Приобретение опыта участия в соревнованиях и присвоение спортивных разрядов</p><img class="advantage__img" src="img/advantage-5.webp" alt=""/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="groups" id="groups">
+      <div class="container">
+        <h2 class="title groups__title">Информация <b>о группах</b></h2>
+        <div class="groups__box">
+          <div class="swiper js-sliderGroups"> 
+            <div class="swiper-wrapper">
+              <div class="preview swiper-slide">
+                <figure class="preview__imgbox"><img class="preview__img" src="img/group-1.png" alt="@"/></figure>
+                <div class="preview__info"> 
+                  <div class="preview__title">Оздоровительная группа</div>
+                  <p class="preview__text">Оздоровительная группа по фигурному катанию – это замечательная возможность для занятий спортом и укрепления здоровья. Такая группа может объединять людей любого возраста и уровня подготовки. В ней можно заниматься как профессионально, так и просто для улучшения физической формы.</p>
+                  <ul class="preview__list"> 
+                    <li class="preview__li">Расписание для занятий составлено удобно как для школьников , так и для дошкольников</li>
+                    <li class="preview__li">Тренировки проходят во второй половине дня</li>
+                    <li class="preview__li">Детские оздоровительные группы выходного дня ( суббота - воскресенье)</li>
+                    <li class="preview__li">В течение спортивного сезона проходят клубные зачетные соревнования</li>
+                  </ul>
+                  <button class="preview__morebtn" data-fancybox="group" data-src="#group0">Узнать больше</button>
+                  <button class="button preview__record" data-fancybox="record0" data-src="#record">Записаться в группу</button>
+                </div>
+              </div>
+              <div class="preview swiper-slide">
+                <figure class="preview__imgbox"><img class="preview__img" src="img/group-2.png" alt="@"/></figure>
+                <div class="preview__info"> 
+                  <div class="preview__title">Спортивная группа</div>
+                  <p class="preview__text">Спортивная группа фигурного катания – это команда талантливых спортсменов, которые занимаются фигурным катанием. В этой группе каждый участник проходит обучение у профессиональных тренеров, которые помогают улучшать технику и мастерство.</p>
+                  <ul class="preview__list"> 
+                    <li class="preview__li">В спортивных группах дети занимаются 3 раза в неделю на льду</li>
+                    <li class="preview__li">Расписание для занятий составлено удобно для школьников</li>
+                    <li class="preview__li">Тренировки проходят во второй половине дня</li>
+                    <li class="preview__li">Постановка спортивных программ для участия в соревнованиях</li>
+                  </ul>
+                  <button class="preview__morebtn" data-fancybox="group" data-src="#group1">Узнать больше</button>
+                  <button class="button preview__record" data-fancybox="record1" data-src="#record">Записаться в группу</button>
+                </div>
+              </div>
+              <div class="preview swiper-slide">
+                <figure class="preview__imgbox"><img class="preview__img" src="img/group-3.png" alt="@"/></figure>
+                <div class="preview__info"> 
+                  <div class="preview__title">Группа выходного дня</div>
+                  <p class="preview__text">Группа выходного дня фигурного катания - это команда профессиональных фигуристов, которые выступают в различных соревнованиях и шоу. Эта группа объединяет людей, которые любят фигурное катание и хотят продемонстрировать свои навыки большому к числу зрителей.</p>
+                  <ul class="preview__list"> 
+                    <li class="preview__li">Позволяет заниматься любимым видом спорта в удобное для себя время</li>
+                    <li class="preview__li">Общение с единомышленниками, поделиться опытом и научиться чему-то новому</li>
+                    <li class="preview__li">Позволяет повысить свой уровень подготовки и улучшить технику катания</li>
+                    <li class="preview__li">Помогают ощутить радость от спорта и свободно выразить себя на льду</li>
+                  </ul>
+                  <button class="preview__morebtn" data-fancybox="group" data-src="#group2">Узнать больше</button>
+                  <button class="button preview__record" data-fancybox="record2" data-src="#record">Записаться в группу</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="locations" id="locations"> 
+      <div class="container"> 
+        <h3 class="title groups__title">Где находятся <b>наши катки</b></h3>
+        <div class="locations__box">
+          <div class="swiper js-sliderLocations"> 
+            <div class="swiper-wrapper">
+              <div class="preview swiper-slide">
+                <figure class="preview__imgbox"><img class="preview__img preview__img--bg" src="img/location-1.jpg" alt="@"/></figure>
+                <div class="preview__info"> 
+                  <div class="preview__title">Ледовый каток «Молодёжка»</div>
+                  <p class="preview__text preview__text--location">Москва, м.Молодёжная, <br> ул. Молодогвардейская, 63-65 </p>
+                  <button class="preview__morebtn" data-fancybox="timetable" data-src="#timetable0">Посмотреть расписание</button>
+                  <button class="button preview__record">Проложить маршрут</button>
+                </div>
+              </div>
+              <div class="preview swiper-slide">
+                <figure class="preview__imgbox"><img class="preview__img preview__img--bg" src="img/location-2.jpg" alt="@"/></figure>
+                <div class="preview__info"> 
+                  <div class="preview__title">Ледовый каток «Спорт Станция»</div>
+                  <p class="preview__text preview__text--location">Москва, м. Крылатское, ул. Крылатская, д.2, стр.5 </p>
+                  <button class="preview__morebtn" data-fancybox="timetable" data-src="#timetable1">Посмотреть расписание</button>
+                  <button class="button preview__record">Проложить маршрут</button>
+                </div>
+              </div>
+              <div class="preview swiper-slide">
+                <figure class="preview__imgbox"><img class="preview__img preview__img--bg" src="img/location-3.jpg" alt="@"/></figure>
+                <div class="preview__info"> 
+                  <div class="preview__title">Ледовый каток «Буревестник»</div>
+                  <p class="preview__text preview__text--location">Москва, м.Фрунзенская, ул. Плющиха, д.57 </p>
+                  <button class="preview__morebtn" data-fancybox="timetable" data-src="#timetable2">Посмотреть расписание</button>
+                  <button class="button preview__record">Проложить маршрут</button>
+                </div>
+              </div>
+              <div class="preview swiper-slide">
+                <figure class="preview__imgbox"><img class="preview__img preview__img--bg" src="img/location-1.jpg" alt="@"/></figure>
+                <div class="preview__info"> 
+                  <div class="preview__title">Ледовый каток «МСА Лужники»</div>
+                  <p class="preview__text preview__text--location">Москва, м.Молодёжная, <br> ул. Молодогвардейская, 63-65 </p>
+                  <button class="preview__morebtn" data-fancybox="timetable" data-src="#timetable3">Посмотреть расписание</button>
+                  <button class="button preview__record">Проложить маршрут</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="record"><img class="gradient" src="img/home-gradient.webp" alt="@"/>
+      <div class="container"> 
+        <div class="record__box"> 
+          <div class="record__content"> 
+            <div class="record__info">Это бесплатно</div>
+            <h4 class="record__title">Запишитесь <br/> на пробное <br/> занятие</h4>
+            <div class="record__tagtitle"><b>Посмотрите наше <br/> видео</b> как проходят <br/> тренировки по <br/> фигурному катанию<a class="record__play" data-fancybox="data-fancybox" href="#video"><img src="img/play.png" alt="@"/></a></div>
+          </div>
+          <div class="record__form"> 
+            <form class="form" action="#">
+              <div class="form__item"> 
+                <div class="form__fieldname">Какой возраст вашего ребенка?</div>
+                <div class="form__choose">
+                  <label class="form__label">
+                    <input class="form__check" type="radio" name="age"/><span class="form__val">3-4 года</span>
+                  </label>
+                  <label class="form__label">
+                    <input class="form__check" type="radio" name="age"/><span class="form__val">5-8 лет</span>
+                  </label>
+                  <label class="form__label">
+                    <input class="form__check" type="radio" name="age"/><span class="form__val">+8 лет</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form__item"> 
+                <div class="form__fieldname">Когда вам удобно заниматься?</div>
+                <div class="form__choose">
+                  <label class="form__label">
+                    <input class="form__check" type="radio" name="time"/><span class="form__val">до 12:00</span>
+                  </label>
+                  <label class="form__label">
+                    <input class="form__check" type="radio" name="time"/><span class="form__val">после 12:00</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form__fields"> 
+                <input class="form__input" type="text" placeholder="Как вас зовут?"/>
+                <input class="form__input js-maskPhone" type="text" placeholder="Ваш номер телефона"/>
+                <button class="button form__button">Записаться сейчас</button>
+              </div>
+              <div class="agree">
+                <label class="agree__wrap">
+                  <input class="agree__input" type="checkbox" checked="checked" autocomplete="off"/><span class="agree__checkbox"></span><span class="agree__text">Нажимая на кнопку, вы соглашаетесь с <br/> <a href="">политикой конфиденциальности </a></span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="video" id="video" style="display:none">
+      <div class="video__box"> 
+        <iframe src="https://www.youtube.com/embed/I8_B9AaCWNY" title="Камила Валиева. Произвольная программа (05.03.2023)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+      </div>
+    </div>
+    <section class="gallery" id="gallery"> 
+      <div class="container"> 
+        <h5 class="title gallery__title"><b>За кулисами фигурного катания</b> <br/> фото со спортивных тренировок</h5>
+        <div class="gallery__box"> <a class="gallery__item gallery__item--big" data-fancybox="gallery" href="img/foto-big-1.webp"> <img class="gallery__img" src="img/foto-big-1.webp" alt="@"/></a><a class="gallery__item gallery__item--small" data-fancybox="gallery" href="img/foto-small-1.webp"> <img class="gallery__img" src="img/foto-small-1.webp" alt="@"/></a><a class="gallery__item gallery__item--big" data-fancybox="gallery" href="img/foto-big-2.webp"> <img class="gallery__img" src="img/foto-big-2.webp" alt="@"/></a><a class="gallery__item gallery__item--small" data-fancybox="gallery" href="img/foto-small-2.webp"> <img class="gallery__img" src="img/foto-small-2.webp" alt="@"/></a><a class="gallery__item gallery__item--small" data-fancybox="gallery" href="img/foto-small-3.webp"> <img class="gallery__img" src="img/foto-small-3.webp" alt="@"/></a><a class="gallery__item gallery__item--small" data-fancybox="gallery" href="img/foto-small-4.webp"> <img class="gallery__img" src="img/foto-small-4.webp" alt="@"/></a><a class="gallery__item gallery__item--small" data-fancybox="gallery" href="img/foto-small-5.webp"> <img class="gallery__img" src="img/foto-small-5.webp" alt="@"/></a><a class="gallery__item gallery__item--small" data-fancybox="gallery" href="img/foto-small-6.webp"> <img class="gallery__img" src="img/foto-small-6.webp" alt="@"/></a><a class="gallery__item gallery__item--big" data-fancybox="gallery" href="img/foto-big-3.webp"> <img class="gallery__img" src="img/foto-big-3.webp" alt="@"/></a><a class="gallery__item gallery__item--big" data-fancybox="gallery" href="img/foto-big-4.webp"> <img class="gallery__img" src="img/foto-big-4.webp" alt="@"/></a><a class="gallery__item gallery__item--small" data-fancybox="gallery" href="img/foto-small-7.webp"> <img class="gallery__img" src="img/foto-small-7.webp" alt="@"/></a><a class="gallery__item gallery__item--small" data-fancybox="gallery" href="img/foto-small-8.webp"> <img class="gallery__img" src="img/foto-small-8.webp" alt="@"/></a>
+        </div>
+      </div>
+    </section>
+    <section class="target" id="about"> 
+      <div class="container"> 
+        <div class="target__box">
+          <h6 class="title target__title"><b>Главная задача</b> нашей школы</h6>
+          <p class="target__text">Фигурное катание является одним из самых красивых и популярных видов спорта, поэтому неудивительно, что количество желающих записаться в клуб фигурного катания с каждым сезоном растет.Школа фигурного катания «Хрустальный конек» приглашает детей и взрослых в спортивные и оздоровительные группы, а также на занятия в выходные дни, обучение в которых поможет укрепить здоровье и обрести увлекательное хобби на всю жизнь. Записавшись в наш спортивный клуб, вы получите следующие преимущества:</p>
+          <ul class="target__list"> 
+            <li class="target__li">профессионализм и опыт тренерского состава: среди ваших учителей будут талантливые выпускники спортивных вузов, мастера спорта, действующие судьи</li>
+            <li class="target__li">удобное расписание занятий, которое без труда удастся встроить в учебный или рабочий график</li>
+            <li class="target__li">пять ледовых площадок для занятий в разных уголках Москвы, чтобы вы могли выбрать оптимальное место – «Молодежка», «МСА Лужники», «Спорт Станция», «Буревестник»</li>
+            <li class="target__li">возможность приобрести абонемент на занятия по доступной стоимости и докатывать пропущенные уроки бесплатно на любой из площадок клуба</li>
+          </ul>
+          <button class="button target__button">Записаться на занятие</button>
+        </div>
+      </div>
+    </section>
+    <section class="coach" id="coach">
+      <div class="container"> 
+        <h6 class="title coach__title">Посмотрите на наш <b>тренерский состав</b></h6>
+        <div class="coach__box"> 
+          <div class="coach__item">
+            <div class="coach__info"> 
+              <div class="coach__name">Горшкова К. В.</div>
+              <p class="coach__status">Дипломированный тренер</p>
+              <p class="coach__text">Тренер спортивной группы юношеских разрядов. (СГ 3), оздоровительных групп</p>
+            </div>
+            <picture>
+              <source media="(max-width: 565px)" srcset="img/trener-mob-1.webp"/><img class="coach__foto" src="img/trener-1.webp" alt="@"/>
+            </picture>
+          </div>
+          <div class="coach__item">
+            <div class="coach__info"> 
+              <div class="coach__name">Альпидовская С. Г.</div>
+              <p class="coach__status">Тренер-преподаватель по фигурному катанию</p>
+              <p class="coach__text">Тренер спортивной группы (СГ 2), оздоровительных групп</p>
+            </div>
+            <picture>
+              <source media="(max-width: 565px)" srcset="img/trener-mob-2.webp"/><img class="coach__foto" src="img/trener-2.webp" alt="@"/>
+            </picture>
+          </div>
+          <div class="coach__item">
+            <div class="coach__info"> 
+              <div class="coach__name">Карпова О. Г.</div>
+              <p class="coach__status">Дипломированный тренер</p>
+              <p class="coach__text">Тренер оздоровительных групп и спортивной группы (СГ 1)</p>
+            </div>
+            <picture>
+              <source media="(max-width: 565px)" srcset="img/trener-mob-3.webp"/><img class="coach__foto" src="img/trener-3.webp" alt="@"/>
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews"> 
+      <div class="container">
+        <p class="reviews__overtitle">Почитайте отзывы о школе и успехах детей</p>
+        <h6 class="title reviews__title">Вы будете <b>гордиться своим ребенком</b></h6>
+        <div class="reviews__box">
+          <div class="swiper js-sliderReviews"> 
+            <div class="swiper-wrapper">
+              <div class="review swiper-slide">
+                <div class="review__inner">
+                  <div class="review__headbox"> 
+                    <figure class="review__avabox"> <img class="review__foto" src="img/ava-1.png" alt="@"/></figure>
+                    <div class="review__namebox"> <span class="review__author">Анна Авгутова</span><span class="review__status">Дочка Карина, 7 лет</span></div>
+                  </div>
+                  <div class="review__text">
+                    <div class="review__visible js-reviewVisible">
+                      <p>У меня, как у искусствоведа, нет личного опыта занятий фигурным катанием и обучения с тренером. Однако, я могу описать, какие качества должен обладать хороший тренер фигурного катания.</p>
+                    </div>
+                    <div class="review__hidden js-reviewHidden"> 
+                      <p>У меня, как у искусствоведа, нет личного опыта занятий фигурным катанием и обучения с тренером. Однако, я могу описать, какие качества должен обладать хороший тренер фигурного катания.</p>
+                    </div>
+                  </div>
+                  <button class="review__toggle js-reviewToggle">Читать отзыв</button>
+                </div>
+              </div>
+              <div class="review swiper-slide">
+                <div class="review__inner">
+                  <div class="review__headbox"> 
+                    <figure class="review__avabox"> <img class="review__foto" src="img/ava-1.png" alt="@"/></figure>
+                    <div class="review__namebox"> <span class="review__author">Анна Авгутова</span><span class="review__status">Дочка Карина, 7 лет</span></div>
+                  </div>
+                  <div class="review__text">
+                    <div class="review__visible js-reviewVisible">
+                      <p>У меня, как у искусствоведа, нет личного опыта занятий фигурным катанием и обучения с тренером. Однако, я могу описать, какие качества должен обладать хороший тренер фигурного катания.</p>
+                    </div>
+                    <div class="review__hidden js-reviewHidden"> 
+                      <p>У меня, как у искусствоведа, нет личного опыта занятий фигурным катанием и обучения с тренером. Однако, я могу описать, какие качества должен обладать хороший тренер фигурного катания.</p>
+                    </div>
+                  </div>
+                  <button class="review__toggle js-reviewToggle">Читать отзыв</button>
+                </div>
+              </div>
+              <div class="review swiper-slide">
+                <div class="review__inner">
+                  <div class="review__headbox"> 
+                    <figure class="review__avabox"> <img class="review__foto" src="img/ava-1.png" alt="@"/></figure>
+                    <div class="review__namebox"> <span class="review__author">Анна Авгутова</span><span class="review__status">Дочка Карина, 7 лет</span></div>
+                  </div>
+                  <div class="review__text">
+                    <div class="review__visible js-reviewVisible">
+                      <p>У меня, как у искусствоведа, нет личного опыта занятий фигурным катанием и обучения с тренером. Однако, я могу описать, какие качества должен обладать хороший тренер фигурного катания.</p>
+                    </div>
+                    <div class="review__hidden js-reviewHidden"> 
+                      <p>У меня, как у искусствоведа, нет личного опыта занятий фигурным катанием и обучения с тренером. Однако, я могу описать, какие качества должен обладать хороший тренер фигурного катания.</p>
+                    </div>
+                  </div>
+                  <button class="review__toggle js-reviewToggle">Читать отзыв</button>
+                </div>
+              </div>
+              <div class="review swiper-slide">
+                <div class="review__inner">
+                  <div class="review__headbox"> 
+                    <figure class="review__avabox"> <img class="review__foto" src="img/ava-1.png" alt="@"/></figure>
+                    <div class="review__namebox"> <span class="review__author">Анна Авгутова</span><span class="review__status">Дочка Карина, 7 лет</span></div>
+                  </div>
+                  <div class="review__text">
+                    <div class="review__visible js-reviewVisible">
+                      <p>У меня, как у искусствоведа, нет личного опыта занятий фигурным катанием и обучения с тренером. Однако, я могу описать, какие качества должен обладать хороший тренер фигурного катания.</p>
+                    </div>
+                    <div class="review__hidden js-reviewHidden"> 
+                      <p>У меня, как у искусствоведа, нет личного опыта занятий фигурным катанием и обучения с тренером. Однако, я могу описать, какие качества должен обладать хороший тренер фигурного катания.</p>
+                    </div>
+                  </div>
+                  <button class="review__toggle js-reviewToggle">Читать отзыв</button>
+                </div>
+              </div>
+              <div class="review swiper-slide">
+                <div class="review__inner">
+                  <div class="review__headbox"> 
+                    <figure class="review__avabox"> <img class="review__foto" src="img/ava-1.png" alt="@"/></figure>
+                    <div class="review__namebox"> <span class="review__author">Анна Авгутова</span><span class="review__status">Дочка Карина, 7 лет</span></div>
+                  </div>
+                  <div class="review__text">
+                    <div class="review__visible js-reviewVisible">
+                      <p>У меня, как у искусствоведа, нет личного опыта занятий фигурным катанием и обучения с тренером. Однако, я могу описать, какие качества должен обладать хороший тренер фигурного катания.</p>
+                    </div>
+                    <div class="review__hidden js-reviewHidden"> 
+                      <p>У меня, как у искусствоведа, нет личного опыта занятий фигурным катанием и обучения с тренером. Однако, я могу описать, какие качества должен обладать хороший тренер фигурного катания.</p>
+                    </div>
+                  </div>
+                  <button class="review__toggle js-reviewToggle">Читать отзыв</button>
+                </div>
+              </div>
+              <div class="review swiper-slide">
+                <div class="review__inner">
+                  <div class="review__headbox"> 
+                    <figure class="review__avabox"> <img class="review__foto" src="img/ava-1.png" alt="@"/></figure>
+                    <div class="review__namebox"> <span class="review__author">Анна Авгутова</span><span class="review__status">Дочка Карина, 7 лет</span></div>
+                  </div>
+                  <div class="review__text">
+                    <div class="review__visible js-reviewVisible">
+                      <p>У меня, как у искусствоведа, нет личного опыта занятий фигурным катанием и обучения с тренером. Однако, я могу описать, какие качества должен обладать хороший тренер фигурного катания.</p>
+                    </div>
+                    <div class="review__hidden js-reviewHidden"> 
+                      <p>У меня, как у искусствоведа, нет личного опыта занятий фигурным катанием и обучения с тренером. Однако, я могу описать, какие качества должен обладать хороший тренер фигурного катания.</p>
+                    </div>
+                  </div>
+                  <button class="review__toggle js-reviewToggle">Читать отзыв</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <button class="button reviews__button">Оставить отзыв</button>
+      </div>
+    </section>
+    <section class="faq"> 
+      <div class="container"> 
+        <h6 class="title faq__title"><b>Ответы</b> на популярные вопросы</h6>
+        <div class="accordeon">
+          <div class="accordeon__col">
+            <div class="accordeon__item">
+              <div class="accordeon__header"> 
+                <p>С какого возраста?</p>
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path d="M18.1201 7.57099C18.0385 7.35614 17.8408 7.13271 17.6432 7.04247C17.4283 6.94364 17.0717 6.93935 16.8526 7.02528C16.7408 7.07255 15.8342 7.95341 13.8491 9.93856L11.0002 12.7831L8.15569 9.93856C6.16624 7.95341 5.2596 7.07255 5.14788 7.02528C4.93304 6.93935 4.5721 6.94364 4.35726 7.04247C4.05647 7.17997 3.82444 7.54521 3.82444 7.88466C3.82444 8.26708 3.73421 8.16396 7.17171 11.6186C9.39749 13.853 10.476 14.9015 10.592 14.9573C10.8155 15.0604 11.185 15.0604 11.4084 14.9573C11.5244 14.9015 12.603 13.853 14.8287 11.6186C17.6389 8.7956 18.0815 8.33153 18.1244 8.18114C18.1889 7.962 18.1846 7.75575 18.1201 7.57099Z" fill="#2A688F"></path>
+                </svg>
+              </div>
+              <div class="accordeon__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nam consequatur magnam molestiae architecto rerum, non voluptatum magni pariatur in vel dolore accusantium reiciendis omnis, eveniet ipsa laboriosam quidem fugit?</p>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__header"> 
+                <p>Для кого подходит оздоровительная группа?</p>
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path d="M18.1201 7.57099C18.0385 7.35614 17.8408 7.13271 17.6432 7.04247C17.4283 6.94364 17.0717 6.93935 16.8526 7.02528C16.7408 7.07255 15.8342 7.95341 13.8491 9.93856L11.0002 12.7831L8.15569 9.93856C6.16624 7.95341 5.2596 7.07255 5.14788 7.02528C4.93304 6.93935 4.5721 6.94364 4.35726 7.04247C4.05647 7.17997 3.82444 7.54521 3.82444 7.88466C3.82444 8.26708 3.73421 8.16396 7.17171 11.6186C9.39749 13.853 10.476 14.9015 10.592 14.9573C10.8155 15.0604 11.185 15.0604 11.4084 14.9573C11.5244 14.9015 12.603 13.853 14.8287 11.6186C17.6389 8.7956 18.0815 8.33153 18.1244 8.18114C18.1889 7.962 18.1846 7.75575 18.1201 7.57099Z" fill="#2A688F"></path>
+                </svg>
+              </div>
+              <div class="accordeon__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nam consequatur magnam molestiae architecto rerum, non voluptatum magni pariatur in vel dolore accusantium reiciendis omnis, eveniet ipsa laboriosam quidem fugit?</p>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__header"> 
+                <p>Для кого подходит спортивная группа?</p>
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path d="M18.1201 7.57099C18.0385 7.35614 17.8408 7.13271 17.6432 7.04247C17.4283 6.94364 17.0717 6.93935 16.8526 7.02528C16.7408 7.07255 15.8342 7.95341 13.8491 9.93856L11.0002 12.7831L8.15569 9.93856C6.16624 7.95341 5.2596 7.07255 5.14788 7.02528C4.93304 6.93935 4.5721 6.94364 4.35726 7.04247C4.05647 7.17997 3.82444 7.54521 3.82444 7.88466C3.82444 8.26708 3.73421 8.16396 7.17171 11.6186C9.39749 13.853 10.476 14.9015 10.592 14.9573C10.8155 15.0604 11.185 15.0604 11.4084 14.9573C11.5244 14.9015 12.603 13.853 14.8287 11.6186C17.6389 8.7956 18.0815 8.33153 18.1244 8.18114C18.1889 7.962 18.1846 7.75575 18.1201 7.57099Z" fill="#2A688F"></path>
+                </svg>
+              </div>
+              <div class="accordeon__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nam consequatur magnam molestiae architecto rerum, non voluptatum magni pariatur in vel dolore accusantium reiciendis omnis, eveniet ipsa laboriosam quidem fugit?</p>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__header"> 
+                <p>Участие в соревнованиях</p>
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path d="M18.1201 7.57099C18.0385 7.35614 17.8408 7.13271 17.6432 7.04247C17.4283 6.94364 17.0717 6.93935 16.8526 7.02528C16.7408 7.07255 15.8342 7.95341 13.8491 9.93856L11.0002 12.7831L8.15569 9.93856C6.16624 7.95341 5.2596 7.07255 5.14788 7.02528C4.93304 6.93935 4.5721 6.94364 4.35726 7.04247C4.05647 7.17997 3.82444 7.54521 3.82444 7.88466C3.82444 8.26708 3.73421 8.16396 7.17171 11.6186C9.39749 13.853 10.476 14.9015 10.592 14.9573C10.8155 15.0604 11.185 15.0604 11.4084 14.9573C11.5244 14.9015 12.603 13.853 14.8287 11.6186C17.6389 8.7956 18.0815 8.33153 18.1244 8.18114C18.1889 7.962 18.1846 7.75575 18.1201 7.57099Z" fill="#2A688F"></path>
+                </svg>
+              </div>
+              <div class="accordeon__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nam consequatur magnam molestiae architecto rerum, non voluptatum magni pariatur in vel dolore accusantium reiciendis omnis, eveniet ipsa laboriosam quidem fugit?</p>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__header"> 
+                <p>Где можно узнать расписание школы?</p>
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path d="M18.1201 7.57099C18.0385 7.35614 17.8408 7.13271 17.6432 7.04247C17.4283 6.94364 17.0717 6.93935 16.8526 7.02528C16.7408 7.07255 15.8342 7.95341 13.8491 9.93856L11.0002 12.7831L8.15569 9.93856C6.16624 7.95341 5.2596 7.07255 5.14788 7.02528C4.93304 6.93935 4.5721 6.94364 4.35726 7.04247C4.05647 7.17997 3.82444 7.54521 3.82444 7.88466C3.82444 8.26708 3.73421 8.16396 7.17171 11.6186C9.39749 13.853 10.476 14.9015 10.592 14.9573C10.8155 15.0604 11.185 15.0604 11.4084 14.9573C11.5244 14.9015 12.603 13.853 14.8287 11.6186C17.6389 8.7956 18.0815 8.33153 18.1244 8.18114C18.1889 7.962 18.1846 7.75575 18.1201 7.57099Z" fill="#2A688F"></path>
+                </svg>
+              </div>
+              <div class="accordeon__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nam consequatur magnam molestiae architecto rerum, non voluptatum magni pariatur in vel dolore accusantium reiciendis omnis, eveniet ipsa laboriosam quidem fugit?</p>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__header"> 
+                <p>Какие документы необходимы подготовить для тренировок</p>
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path d="M18.1201 7.57099C18.0385 7.35614 17.8408 7.13271 17.6432 7.04247C17.4283 6.94364 17.0717 6.93935 16.8526 7.02528C16.7408 7.07255 15.8342 7.95341 13.8491 9.93856L11.0002 12.7831L8.15569 9.93856C6.16624 7.95341 5.2596 7.07255 5.14788 7.02528C4.93304 6.93935 4.5721 6.94364 4.35726 7.04247C4.05647 7.17997 3.82444 7.54521 3.82444 7.88466C3.82444 8.26708 3.73421 8.16396 7.17171 11.6186C9.39749 13.853 10.476 14.9015 10.592 14.9573C10.8155 15.0604 11.185 15.0604 11.4084 14.9573C11.5244 14.9015 12.603 13.853 14.8287 11.6186C17.6389 8.7956 18.0815 8.33153 18.1244 8.18114C18.1889 7.962 18.1846 7.75575 18.1201 7.57099Z" fill="#2A688F"></path>
+                </svg>
+              </div>
+              <div class="accordeon__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nam consequatur magnam molestiae architecto rerum, non voluptatum magni pariatur in vel dolore accusantium reiciendis omnis, eveniet ipsa laboriosam quidem fugit?</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordeon__col"> 
+            <div class="accordeon__item">
+              <div class="accordeon__header"> 
+                <p>Где можно узнать стоимость тренировок?</p>
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path d="M18.1201 7.57099C18.0385 7.35614 17.8408 7.13271 17.6432 7.04247C17.4283 6.94364 17.0717 6.93935 16.8526 7.02528C16.7408 7.07255 15.8342 7.95341 13.8491 9.93856L11.0002 12.7831L8.15569 9.93856C6.16624 7.95341 5.2596 7.07255 5.14788 7.02528C4.93304 6.93935 4.5721 6.94364 4.35726 7.04247C4.05647 7.17997 3.82444 7.54521 3.82444 7.88466C3.82444 8.26708 3.73421 8.16396 7.17171 11.6186C9.39749 13.853 10.476 14.9015 10.592 14.9573C10.8155 15.0604 11.185 15.0604 11.4084 14.9573C11.5244 14.9015 12.603 13.853 14.8287 11.6186C17.6389 8.7956 18.0815 8.33153 18.1244 8.18114C18.1889 7.962 18.1846 7.75575 18.1201 7.57099Z" fill="#2A688F"></path>
+                </svg>
+              </div>
+              <div class="accordeon__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nam consequatur magnam molestiae architecto rerum, non voluptatum magni pariatur in vel dolore accusantium reiciendis omnis, eveniet ipsa laboriosam quidem fugit?</p>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__header"> 
+                <p>Как проходят занятия / сколько длятся занятия</p>
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path d="M18.1201 7.57099C18.0385 7.35614 17.8408 7.13271 17.6432 7.04247C17.4283 6.94364 17.0717 6.93935 16.8526 7.02528C16.7408 7.07255 15.8342 7.95341 13.8491 9.93856L11.0002 12.7831L8.15569 9.93856C6.16624 7.95341 5.2596 7.07255 5.14788 7.02528C4.93304 6.93935 4.5721 6.94364 4.35726 7.04247C4.05647 7.17997 3.82444 7.54521 3.82444 7.88466C3.82444 8.26708 3.73421 8.16396 7.17171 11.6186C9.39749 13.853 10.476 14.9015 10.592 14.9573C10.8155 15.0604 11.185 15.0604 11.4084 14.9573C11.5244 14.9015 12.603 13.853 14.8287 11.6186C17.6389 8.7956 18.0815 8.33153 18.1244 8.18114C18.1889 7.962 18.1846 7.75575 18.1201 7.57099Z" fill="#2A688F"></path>
+                </svg>
+              </div>
+              <div class="accordeon__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nam consequatur magnam molestiae architecto rerum, non voluptatum magni pariatur in vel dolore accusantium reiciendis omnis, eveniet ipsa laboriosam quidem fugit?</p>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__header"> 
+                <p>Как работает школа?</p>
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path d="M18.1201 7.57099C18.0385 7.35614 17.8408 7.13271 17.6432 7.04247C17.4283 6.94364 17.0717 6.93935 16.8526 7.02528C16.7408 7.07255 15.8342 7.95341 13.8491 9.93856L11.0002 12.7831L8.15569 9.93856C6.16624 7.95341 5.2596 7.07255 5.14788 7.02528C4.93304 6.93935 4.5721 6.94364 4.35726 7.04247C4.05647 7.17997 3.82444 7.54521 3.82444 7.88466C3.82444 8.26708 3.73421 8.16396 7.17171 11.6186C9.39749 13.853 10.476 14.9015 10.592 14.9573C10.8155 15.0604 11.185 15.0604 11.4084 14.9573C11.5244 14.9015 12.603 13.853 14.8287 11.6186C17.6389 8.7956 18.0815 8.33153 18.1244 8.18114C18.1889 7.962 18.1846 7.75575 18.1201 7.57099Z" fill="#2A688F"></path>
+                </svg>
+              </div>
+              <div class="accordeon__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nam consequatur magnam molestiae architecto rerum, non voluptatum magni pariatur in vel dolore accusantium reiciendis omnis, eveniet ipsa laboriosam quidem fugit?</p>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__header"> 
+                <p>Пропущенные тренировки по абонементу</p>
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path d="M18.1201 7.57099C18.0385 7.35614 17.8408 7.13271 17.6432 7.04247C17.4283 6.94364 17.0717 6.93935 16.8526 7.02528C16.7408 7.07255 15.8342 7.95341 13.8491 9.93856L11.0002 12.7831L8.15569 9.93856C6.16624 7.95341 5.2596 7.07255 5.14788 7.02528C4.93304 6.93935 4.5721 6.94364 4.35726 7.04247C4.05647 7.17997 3.82444 7.54521 3.82444 7.88466C3.82444 8.26708 3.73421 8.16396 7.17171 11.6186C9.39749 13.853 10.476 14.9015 10.592 14.9573C10.8155 15.0604 11.185 15.0604 11.4084 14.9573C11.5244 14.9015 12.603 13.853 14.8287 11.6186C17.6389 8.7956 18.0815 8.33153 18.1244 8.18114C18.1889 7.962 18.1846 7.75575 18.1201 7.57099Z" fill="#2A688F"></path>
+                </svg>
+              </div>
+              <div class="accordeon__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nam consequatur magnam molestiae architecto rerum, non voluptatum magni pariatur in vel dolore accusantium reiciendis omnis, eveniet ipsa laboriosam quidem fugit?</p>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__header"> 
+                <p>Что необходимом для тренировок</p>
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path d="M18.1201 7.57099C18.0385 7.35614 17.8408 7.13271 17.6432 7.04247C17.4283 6.94364 17.0717 6.93935 16.8526 7.02528C16.7408 7.07255 15.8342 7.95341 13.8491 9.93856L11.0002 12.7831L8.15569 9.93856C6.16624 7.95341 5.2596 7.07255 5.14788 7.02528C4.93304 6.93935 4.5721 6.94364 4.35726 7.04247C4.05647 7.17997 3.82444 7.54521 3.82444 7.88466C3.82444 8.26708 3.73421 8.16396 7.17171 11.6186C9.39749 13.853 10.476 14.9015 10.592 14.9573C10.8155 15.0604 11.185 15.0604 11.4084 14.9573C11.5244 14.9015 12.603 13.853 14.8287 11.6186C17.6389 8.7956 18.0815 8.33153 18.1244 8.18114C18.1889 7.962 18.1846 7.75575 18.1201 7.57099Z" fill="#2A688F"></path>
+                </svg>
+              </div>
+              <div class="accordeon__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nam consequatur magnam molestiae architecto rerum, non voluptatum magni pariatur in vel dolore accusantium reiciendis omnis, eveniet ipsa laboriosam quidem fugit?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="record record2">
+      <div class="container"> 
+        <div class="record__box"> 
+          <div class="record__content"> 
+            <h6 class="record2__title">Запишитесь <br/> на <b class="record2__title--blue">бесплатное <br/> занятие</b> в школе</h6>
+            <ul class="record__list">
+              <li class="record__li">Фигурное катание помогает развивать баланс, гибкость, силу, выносливость, координацию движений и быстроту реакции</li>
+              <li class="record__li">Занятия фигурным катанием способствуют развитию концентрации внимания, настойчивости, самодисциплины и уверенности в себе</li>
+              <li class="record__li">Фигурное катание помогает формировать хороший вкус, эстетическое чувство и восприятие прекрасного</li>
+              <li class="record__li">Занятия фигурным катанием способствуют улучшению коммуникативных навыков, знакомству с разнообразными людьми, а также развитию чувства коллективизма и умения работать в команде</li>
+            </ul>
+          </div>
+          <div class="record__form record__form--2"> 
+            <form class="form" action="#">
+              <div class="form__item"> 
+                <div class="form__fieldname">Какой возраст вашего ребенка?</div>
+                <div class="form__choose">
+                  <label class="form__label">
+                    <input class="form__check" type="radio" name="age"/><span class="form__val">3-4 года</span>
+                  </label>
+                  <label class="form__label">
+                    <input class="form__check" type="radio" name="age"/><span class="form__val">5-8 лет</span>
+                  </label>
+                  <label class="form__label">
+                    <input class="form__check" type="radio" name="age"/><span class="form__val">+8 лет</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form__item"> 
+                <div class="form__fieldname">Когда вам удобно заниматься?</div>
+                <div class="form__choose">
+                  <label class="form__label">
+                    <input class="form__check" type="radio" name="time"/><span class="form__val">до 12:00</span>
+                  </label>
+                  <label class="form__label">
+                    <input class="form__check" type="radio" name="time"/><span class="form__val">после 12:00</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form__fields"> 
+                <input class="form__input" type="text" placeholder="Как вас зовут?"/>
+                <input class="form__input js-maskPhone" type="text" placeholder="Ваш номер телефона"/>
+                <button class="button form__button">Записаться сейчас</button>
+              </div>
+              <div class="agree">
+                <label class="agree__wrap">
+                  <input class="agree__input" type="checkbox" checked="checked" autocomplete="off"/><span class="agree__checkbox"></span><span class="agree__text">Нажимая на кнопку, вы соглашаетесь с <br/> <a href="">политикой конфиденциальности </a></span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts"> 
+      <div class="contacts__box"> 
+        <div class="container"> 
+          <div class="contacts-data"> 
+            <h6 class="title contacts-data__title"><b>Контакты</b> школы</h6>
+            <div class="contacts-data__name">Телефон</div><a class="contacts-data__phone" href="tel:+79250837222">+7 (925) 083-72-22</a>
+            <div class="contacts-data__name">Почта</div><a class="contacts-data__email" href="mailto:xkonek-eis@yandex.ru">xkonek-eis@yandex.ru</a>
+            <div class="contacts-data__name">Время работы</div><span class="contacts-data__timetable">Ежедневно с 09:00 до 18:00</span>
+            <div class="contacts-data__name">Соц. сети</div>
+            <div class="contacts-social"> <a class="contacts-social__link" href="#"><img class="contacts-social__icon" src="img/icon-whatsapp.svg" alt="@"/></a><a class="contacts-social__link" href="#"><img class="contacts-social__icon" src="img/icon-telegram.svg" alt="@"/></a><a class="contacts-social__link" href="#"><img class="contacts-social__icon" src="img/icon-youtube.svg" alt="@"/></a>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__map" id="map"></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container"> 
+        <div class="footer__box"> 
+          <div class="logo"> <img class="logo__img" src="img/logo.svg" alt="@"/>
+            <div class="logo__text"> <b class="logo__name logo__name--white">Хрустальный конек</b><span class="logo__info logo__info--white">Спортивная школа по <br/> фигурному катанию</span></div>
+          </div>
+          <div class="footer__links"> <a href="#">Пользавательское соглашение</a><a href="#">Политика конфиденциальности</a></div>
+          <div class="dev"> <span class="dev__text">Создание сайта</span><a class="dev__logo" href=""> <img src="img/scrum-logo.png" alt="@"/></a></div>
+        </div>
+      </div>
+    </footer>
+    <div class="popup popup-record" id="record">
+      <div class="popup-record__box"><img class="popup-record__img" src="img/popup-foto.webp" alt="@"/>
+        <form class="popup-record__form" action="#"> 
+          <div class="popup-record__title">Записаться <br/> на первую тренировку</div>
+          <p class="popup-record__tagtitle">Заполните форму ниже и мы свяжемся с <br/> вами <b>в ближайшее время</b></p>
+          <div class="form__fields"> 
+            <input class="form__input" type="text" placeholder="Как вас зовут?"/>
+            <input class="form__input js-maskPhone" type="text" placeholder="Ваш номер телефона"/>
+            <button class="button form__button" data-fancybox="thanks" data-src="#thanks">Записаться сейчас</button>
+          </div>
+          <div class="agree">
+            <label class="agree__wrap">
+              <input class="agree__input" type="checkbox" checked="checked" autocomplete="off"/><span class="agree__checkbox"></span><span class="agree__text">Нажимая на кнопку, вы соглашаетесь с <br/> <a href="">политикой конфиденциальности </a></span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="popup popup-thanks" id="thanks"><img class="popup-thanks__img" src="img/thanks.png" alt="@"/>
+      <div class="popup-thanks__title">Спасибо!!!</div>
+      <p class="popup-thanks__tagtitle">Ваш запрос обрабатывается, <b>мы <br/> перезвоним вам</b> в ближайшее время</p>
+      <button class="button popup-thanks__button">Спасибо</button>
+    </div>
+    <div class="popup popup-group" id="group0">
+      <div class="popup__title">Оздоровительная группа</div>
+      <ul class="popup__list"> 
+        <li>для детей от 4 лет</li>
+        <li>2 ледовые тренировки</li>
+        <li>2 тренировки по общей и специальной физической подготовке</li>
+        <li>участие в тестах и зачетах школы</li>
+        <li>открытые тренировки для родителей</li>
+        <li>тренировки на неделе и в выходные дни</li>
+        <li>возможность начать тренироваться в спортивной группе</li>
+      </ul>
+      <p class="popup-group__text">Тренировки проходят на ледовых катках:</p>
+      <div class="popup-group__locations"> 
+        <div class="popup-group__item"> <b class="popup-group__locname">Каток «Спорт Станция»</b><a class="popup-group__locroute" href="#">Проложить маршрут </a></div>
+        <div class="popup-group__item"> <b class="popup-group__locname">Каток «Буревестник»</b><a class="popup-group__locroute" href="#">Проложить маршрут </a></div>
+      </div>
+    </div>
+    <div class="popup popup-group" id="group1">
+      <div class="popup__title">Спортивная группа</div>
+      <ul class="popup__list"> 
+        <li>приглашаем спортсменов с нормативами «юный фигурист» до 1 спортивного разряда</li>
+        <li>наши спортсмены участвуют в сдачах тестов и официальных соревнованиях Москвы и России</li>
+        <li>4 ледовые тренировки в неделю</li>
+        <li>3 тренировки по общей и специальной физической подготовке</li>
+      </ul>
+      <p class="popup-group__text">Тренировки проходят на ледовых катках:</p>
+      <div class="popup-group__locations"> 
+        <div class="popup-group__item"> <b class="popup-group__locname">Каток «Молодежка»</b><a class="popup-group__locroute" href="#">Проложить маршрут </a></div>
+        <div class="popup-group__item"> <b class="popup-group__locname">Каток «Спорт Станция»</b><a class="popup-group__locroute" href="#">Проложить маршрут </a></div>
+        <div class="popup-group__item"> <b class="popup-group__locname">Каток «МСА Лужники»</b><a class="popup-group__locroute" href="#">Проложить маршрут </a></div>
+      </div>
+    </div>
+    <div class="popup popup-group" id="group2">
+      <div class="popup__title">Группа выходного дня</div>
+      <ul class="popup__list"> 
+        <li>для детей любого уровня подготовки</li>
+        <li>2 ледовые тренировки в выходные дни</li>
+        <li>2 тренировки по общей и специальной физической подготовке</li>
+        <li>участие в тестах и зачетах школы</li>
+        <li>открытые тренировки для родителей</li>
+      </ul>
+      <p class="popup-group__text">Тренировки проходят на ледовых катках:</p>
+      <div class="popup-group__locations"> 
+        <div class="popup-group__item"> <b class="popup-group__locname">Каток «Спорт Станция»</b><a class="popup-group__locroute" href="#">Проложить маршрут </a></div>
+      </div>
+    </div>
+    <div class="popup popup-timetable" id="timetable0"> 
+      <div class="popup-timetable__title">Расписание занятий</div>
+      <div class="popup-timetable__objects">
+        <div class="popup-timetable__object">
+          <div class="popup-timetable__objectname">Ледовый каток «Молодёжка»</div>
+          <p class="popup-timetable__status">*СГ 2 (3 юношеский, 2 юношеский разряд), *СГ 4 (3 спортивный -1 спортивный разряд)</p>
+          <div class="popup-timetable__table table">
+            <table> 
+              <thead>
+                <tr>
+                  <th>День и место проведения</th>
+                  <th>Разминка</th>
+                  <th>Лед</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr> 
+                  <td class="align-left">Понедельник «МСА Лужники»</td>
+                  <td>17:00-17:45</td>
+                  <td>18:00-19:00</td>
+                </tr>
+                <tr> 
+                  <td class="align-left">Среда «МСА Лужники»</td>
+                  <td>17:00-17:45</td>
+                  <td>18:00-19:00</td>
+                </tr>
+                <tr> 
+                  <td class="align-left">Суббота ЛК «Молодежка»</td>
+                  <td>18:15-19:15</td>
+                  <td>19:30-21:00</td>
+                </tr>
+                <tr> 
+                  <td class="align-left">Воскресенье ЛК «Молодежка»</td>
+                  <td>16:30-17:30</td>
+                  <td>17:45-18:45</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="popup-timetable__info">*СГ (Спортивная группа), *ОГ (Оздоровительная группа)</p>
+          <div class="popup-timetable__price"> 
+            <p class="popup-timetable__pricetext">Стоимость абонемента:</p>
+            <div class="popup-timetable__priceitem"> 
+              <div class="popup-timetable__priceval">*СГ 2 от 27 500 р./ 16 тренировок в месяц</div>
+              <button class="popup-timetable__record" data-fancybox="price" data-src="#record">Записаться на тренировку</button>
+            </div>
+            <div class="popup-timetable__priceitem"> 
+              <div class="popup-timetable__priceval">*СГ 4 от 16 700 р./ 8 тренировок в месяц</div>
+              <button class="popup-timetable__record" data-fancybox="price" data-src="#record">Записаться на тренировку</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup-timetable" id="timetable1"> 
+      <div class="popup-timetable__title">Расписание занятий</div>
+      <div class="popup-timetable__objects">
+        <div class="popup-timetable__object">
+          <div class="popup-timetable__objectname">Ледовый каток «Спорт Станция»</div>
+          <p class="popup-timetable__status">*СГ 3 (3 юношеский- 1 юношеский разряд). *СГ 1(юный фигурист)</p>
+          <div class="popup-timetable__table table">
+            <table> 
+              <thead>
+                <tr>
+                  <th>День и место проведения</th>
+                  <th>Разминка</th>
+                  <th>Зал</th>
+                  <th>Лед</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr> 
+                  <td class="align-left">Понедельник «МСА Лужники»</td>
+                  <td>17:00-17:45</td>
+                  <td>-</td>
+                  <td>18:00-19:00</td>
+                </tr>
+                <tr> 
+                  <td class="align-left">Среда «МСА Лужники»</td>
+                  <td>17:00-17:45</td>
+                  <td>-</td>
+                  <td>18:00-19:00</td>
+                </tr>
+                <tr> 
+                  <td class="align-left">Суббота ЛК «Молодежка»</td>
+                  <td>-</td>
+                  <td>10:00-11:00</td>
+                  <td>11:15-12:15</td>
+                </tr>
+                <tr> 
+                  <td class="align-left">Воскресенье ЛК «Молодежка»</td>
+                  <td>-</td>
+                  <td>10:00-11:00</td>
+                  <td>11:15-12:15</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="popup-timetable__info">*СГ (Спортивная группа), *ОГ (Оздоровительная группа)</p>
+          <div class="popup-timetable__price"> 
+            <p class="popup-timetable__pricetext">Стоимость абонемента:</p>
+            <div class="popup-timetable__priceitem"> 
+              <div class="popup-timetable__priceval">*СГ 3 от 24 800 р./16 тренировок в месяц</div>
+              <button class="popup-timetable__record" data-fancybox="price" data-src="#record">Записаться на тренировку</button>
+            </div>
+            <div class="popup-timetable__priceitem"> 
+              <div class="popup-timetable__priceval">*СГ 1 от 24 800 р./16 тренировок в месяц</div>
+              <button class="popup-timetable__record" data-fancybox="price" data-src="#record">Записаться на тренировку</button>
+            </div>
+          </div>
+        </div>
+        <div class="popup-timetable__object">
+          <div class="popup-timetable__objectname">Ледовый каток «Спорт Станция»</div>
+          <p class="popup-timetable__status">*ОГ (1- 5 год обучения)</p>
+          <div class="popup-timetable__table table">
+            <table> 
+              <thead>
+                <tr>
+                  <th>День и место проведения</th>
+                  <th>Разминка</th>
+                  <th>Лед</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr> 
+                  <td class="align-left">Суббота ЛК «Молодежка»</td>
+                  <td>10:00-11:00</td>
+                  <td>11:15-12:15</td>
+                </tr>
+                <tr> 
+                  <td class="align-left">Воскресенье ЛК «Молодежка»</td>
+                  <td>10:00-11:00</td>
+                  <td>11:15-12:15</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="popup-timetable__info">*СГ (Спортивная группа), *ОГ (Оздоровительная группа)</p>
+          <div class="popup-timetable__price"> 
+            <p class="popup-timetable__pricetext">Стоимость абонемента:</p>
+            <div class="popup-timetable__priceitem"> 
+              <div class="popup-timetable__priceval">от 10 800 р./8 тренировок в месяц</div>
+              <button class="popup-timetable__record" data-fancybox="price" data-src="#record">Записаться на тренировку</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup-timetable" id="timetable2"> 
+      <div class="popup-timetable__title">Расписание занятий</div>
+      <div class="popup-timetable__objects">
+        <div class="popup-timetable__object">
+          <div class="popup-timetable__objectname">Ледовый каток «Буревестник»</div>
+          <p class="popup-timetable__status">ОГ - Оздоровительная группа (1 год обучения)</p>
+          <div class="popup-timetable__table table">
+            <table> 
+              <thead>
+                <tr>
+                  <th>День и место проведения</th>
+                  <th>Лед</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr> 
+                  <td class="align-left">Вторник ЛК «Буревестник»</td>
+                  <td>18:15-19:15</td>
+                </tr>
+                <tr> 
+                  <td class="align-left">Четверг ЛК «Буревестник»</td>
+                  <td>18:15-19:15</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="popup-timetable__info">*СГ (Спортивная группа), *ОГ (Оздоровительная группа)</p>
+          <div class="popup-timetable__price"> 
+            <p class="popup-timetable__pricetext">Стоимость абонемента:</p>
+            <div class="popup-timetable__priceitem"> 
+              <div class="popup-timetable__priceval">от 10 800 р./8 тренировок в месяц</div>
+              <button class="popup-timetable__record" data-fancybox="price" data-src="#record">Записаться на тренировку</button>
+            </div>
+          </div>
+        </div>
+        <div class="popup-timetable__object">
+          <div class="popup-timetable__objectname">Ледовый каток «Буревестник»</div>
+          <p class="popup-timetable__status">Группа для взрослых</p>
+          <div class="popup-timetable__table table">
+            <table> 
+              <thead>
+                <tr>
+                  <th>День и место проведения</th>
+                  <th>Лед</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr> 
+                  <td class="align-left">Вторник ЛК «Буревестник»</td>
+                  <td>18:15-19:15</td>
+                </tr>
+                <tr> 
+                  <td class="align-left">Четверг ЛК «Буревестник»</td>
+                  <td>18:15-19:15</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="popup-timetable__info">*СГ (Спортивная группа), *ОГ (Оздоровительная группа)</p>
+          <div class="popup-timetable__price"> 
+            <p class="popup-timetable__pricetext">Стоимость абонемента:</p>
+            <div class="popup-timetable__priceitem"> 
+              <div class="popup-timetable__priceval">от 10 800 р./8 тренировок в месяц</div>
+              <button class="popup-timetable__record" data-fancybox="price" data-src="#record">Записаться на тренировку</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup-timetable" id="timetable3"> 
+      <div class="popup-timetable__title">Расписание занятий</div>
+      <div class="popup-timetable__objects">
+        <div class="popup-timetable__object">
+          <div class="popup-timetable__objectname">Ледовый каток «МСА Лужники»</div>
+          <p class="popup-timetable__status">*СГ 2 (3 юношеский, 2 юношеский разряд), *СГ 4 (3 спортивный -1 спортивный разряд)</p>
+          <div class="popup-timetable__table table">
+            <table> 
+              <thead>
+                <tr>
+                  <th>День и место проведения</th>
+                  <th>Разминка</th>
+                  <th>Зал</th>
+                  <th>Лед</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr> 
+                  <td class="align-left">Понедельник «МСА Лужники»</td>
+                  <td>17:00-17:45</td>
+                  <td>-</td>
+                  <td>18:00-19:00</td>
+                </tr>
+                <tr> 
+                  <td class="align-left">Среда «МСА Лужники»</td>
+                  <td>17:00-17:45</td>
+                  <td>-</td>
+                  <td>18:00-19:00</td>
+                </tr>
+                <tr> 
+                  <td class="align-left">Суббота ЛК «Молодежка»</td>
+                  <td>-</td>
+                  <td>18:15-19:15</td>
+                  <td>19:30-21:00</td>
+                </tr>
+                <tr> 
+                  <td class="align-left">Воскресенье ЛК «Молодежка»</td>
+                  <td>-</td>
+                  <td>16:30-17:30</td>
+                  <td>17:45-18:45</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="popup-timetable__info">*СГ (Спортивная группа), *ОГ (Оздоровительная группа)</p>
+          <div class="popup-timetable__price"> 
+            <p class="popup-timetable__pricetext">Стоимость абонемента:</p>
+            <div class="popup-timetable__priceitem"> 
+              <div class="popup-timetable__priceval">*СГ 2 от 27 500 р./ 16 тренировок в месяц</div>
+              <button class="popup-timetable__record" data-fancybox="price" data-src="#record">Записаться на тренировку</button>
+            </div>
+            <div class="popup-timetable__priceitem"> 
+              <div class="popup-timetable__priceval">*СГ 4 от 16 700 р./ 8 тренировок в месяц</div>
+              <button class="popup-timetable__record" data-fancybox="price" data-src="#record">Записаться на тренировку</button>
+            </div>
+          </div>
+        </div>
+        <div class="popup-timetable__object">
+          <div class="popup-timetable__objectname">Ледовый каток «МСА Лужники»</div>
+          <p class="popup-timetable__status">*СГ 3 (3 юношеский- 1 юношеский разряд). *СГ 1(юный фигурист)</p>
+          <div class="popup-timetable__table table">
+            <table> 
+              <thead>
+                <tr>
+                  <th>День и место проведения</th>
+                  <th>Разминка</th>
+                  <th>Зал</th>
+                  <th>Лед</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr> 
+                  <td class="align-left">Понедельник «МСА Лужники»</td>
+                  <td>17:00-17:45</td>
+                  <td>-</td>
+                  <td>18:00-19:00</td>
+                </tr>
+                <tr> 
+                  <td class="align-left">Среда «МСА Лужники»</td>
+                  <td>17:00-17:45</td>
+                  <td>-</td>
+                  <td>18:00-19:00</td>
+                </tr>
+                <tr> 
+                  <td class="align-left">Суббота ЛК «Спорт Станция»</td>
+                  <td>-</td>
+                  <td>10:00-11:00</td>
+                  <td>11:15-12:15</td>
+                </tr>
+                <tr> 
+                  <td class="align-left">Воскресенье ЛК «Спорт Станция»</td>
+                  <td>-</td>
+                  <td>10:00-11:00</td>
+                  <td>11:15-12:15</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="popup-timetable__info">*СГ (Спортивная группа), *ОГ (Оздоровительная группа)</p>
+          <div class="popup-timetable__price"> 
+            <p class="popup-timetable__pricetext">Стоимость абонемента:</p>
+            <div class="popup-timetable__priceitem"> 
+              <div class="popup-timetable__priceval">*СГ 3 от 24 800 р./16 тренировок в месяц</div>
+              <button class="popup-timetable__record" data-fancybox="price" data-src="#record">Записаться на тренировку</button>
+            </div>
+            <div class="popup-timetable__priceitem"> 
+              <div class="popup-timetable__priceval">*СГ 1 от 24 800 р./16 тренировок в месяц</div>
+              <button class="popup-timetable__record" data-fancybox="price" data-src="#record">Записаться на тренировку</button>
+            </div>
+          </div>
+        </div>
+        <div class="popup-timetable__object"> 
+          <div class="popup-timetable__objectname">Ледовый каток «МСА Лужники»</div>
+          <p class="popup-timetable__status">*ОГ (2 год обучения)</p>
+          <div class="popup-timetable__table table">
+            <table> 
+              <thead>
+                <tr>
+                  <th>День и место проведения</th>
+                  <th>Лед</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr> 
+                  <td class="align-left">Понедельник «МСА Лужники»</td>
+                  <td>18:15-19:15</td>
+                </tr>
+                <tr> 
+                  <td class="align-left">Среда «МСА Лужники»</td>
+                  <td>18:15-19:15</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="popup-timetable__info">*СГ (Спортивная группа), *ОГ (Оздоровительная группа)</p>
+          <div class="popup-timetable__price"> 
+            <p class="popup-timetable__pricetext">Стоимость абонемента:</p>
+            <div class="popup-timetable__priceitem"> 
+              <div class="popup-timetable__priceval">от 10800 р./8 тренировок в месяц</div>
+              <button class="popup-timetable__record" data-fancybox="price" data-src="#record">Записаться на тренировку</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

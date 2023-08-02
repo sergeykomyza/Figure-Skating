@@ -1,0 +1,23 @@
+-
+	const gallery = [
+		{img: 'foto-big-1.webp',   className: 'big'},
+		{img: 'foto-small-1.webp', className: 'small'},
+		{img: 'foto-big-2.webp',   className: 'big'},
+		{img: 'foto-small-2.webp', className: 'small'},
+		{img: 'foto-small-3.webp', className: 'small'},
+		{img: 'foto-small-4.webp', className: 'small'},
+		{img: 'foto-small-5.webp', className: 'small'},
+		{img: 'foto-small-6.webp', className: 'small'},
+		{img: 'foto-big-3.webp',   className: 'big'},
+		{img: 'foto-big-4.webp',   className: 'big'},
+		{img: 'foto-small-7.webp', className: 'small'},
+		{img: 'foto-small-8.webp', className: 'small'},
+	]
+
+section.gallery#gallery 
+	.container 
+		h5.title.gallery__title #[b За кулисами фигурного катания] #[br] фото со спортивных тренировок
+		.gallery__box 
+			each item in gallery
+				a(class=`gallery__item gallery__item--${item.className}` data-fancybox="gallery" href=`img/${item.img}`) 
+					img.gallery__img(src="img/" + item.img, alt="@")

@@ -1,0 +1,17 @@
+-
+	const advantages = [
+		{title: 'Удобное расписание занятий',  text: 'Без труда удастся встроить в учебный или рабочий график',                          icon: 'advantage-1.webp'},
+		{title: 'Дипломированные специалисты', text: 'Мастера спорта, действующие судьи, талантливые выпускники спортивных вузов',       icon: 'advantage-2.webp'},
+		{title: 'Низкая стоимость',            text: 'С возможностью докатывать пропущенные уроки бесплатно на любой из площадок клуба', icon: 'advantage-3.webp'},
+		{title: 'Четыре ледовых площадок',     text: 'В разных уголках Москвы: «Лужники», «Буревестник», «Молодёжка», «Крылатское».',    icon: 'advantage-4.webp'},
+		{title: 'Награды и соревнования ',     text: 'Приобретение опыта участия в соревнованиях и присвоение спортивных разрядов',      icon: 'advantage-5.webp'}
+	]
+
+.advantages 
+	.container 
+		.advantages__box 
+			each item in advantages 
+				.advantage
+					b.advantage__title= item.title 
+					p.advantage__text !{item.text}
+					img.advantage__img(src="img/" + item.icon, alt="")

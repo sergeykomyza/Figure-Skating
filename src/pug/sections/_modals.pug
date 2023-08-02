@@ -1,0 +1,320 @@
+#record.popup.popup-record
+	.popup-record__box
+		img.popup-record__img(src="img/popup-foto.webp", alt="@")
+		form.popup-record__form(action="#") 
+			.popup-record__title Записаться #[br] на первую тренировку
+			p.popup-record__tagtitle Заполните форму ниже и мы свяжемся с #[br] вами #[b в ближайшее время]
+			.form__fields 
+				input.form__input(type="text" placeholder="Как вас зовут?")
+				input.form__input.js-maskPhone(type="text" placeholder="Ваш номер телефона")
+				button.button.form__button(data-fancybox='thanks' data-src="#thanks") Записаться сейчас
+			.agree
+				label.agree__wrap
+					input.agree__input(type="checkbox" checked autocomplete="off")
+					span.agree__checkbox
+					span.agree__text Нажимая на кнопку, вы соглашаетесь с #[br] #[a(href="") политикой конфиденциальности ]
+
+#thanks.popup.popup-thanks
+	img.popup-thanks__img(src="img/thanks.png", alt="@")
+	.popup-thanks__title Спасибо!!!
+	p.popup-thanks__tagtitle Ваш запрос обрабатывается, #[b мы #[br] перезвоним вам] в ближайшее время
+	button.button.popup-thanks__button Спасибо
+
+#group0.popup.popup-group
+	.popup__title Оздоровительная группа
+	ul.popup__list 
+		each item in ['для детей от 4 лет','2 ледовые тренировки','2 тренировки по общей и специальной физической подготовке','участие в тестах и зачетах школы','открытые тренировки для родителей','тренировки на неделе и в выходные дни','возможность начать тренироваться в спортивной группе']
+			li= item
+	p.popup-group__text Тренировки проходят на ледовых катках:
+	.popup-group__locations 
+		each item in ['Каток «Спорт Станция»','Каток «Буревестник»']
+			.popup-group__item 
+				b.popup-group__locname= item 
+				a.popup-group__locroute(href="#") Проложить маршрут 
+
+#group1.popup.popup-group
+	.popup__title Спортивная группа
+	ul.popup__list 
+		each item in ['приглашаем спортсменов с нормативами «юный фигурист» до 1 спортивного разряда','наши спортсмены участвуют в сдачах тестов и официальных соревнованиях Москвы и России','4 ледовые тренировки в неделю','3 тренировки по общей и специальной физической подготовке']
+			li= item
+	p.popup-group__text Тренировки проходят на ледовых катках:
+	.popup-group__locations 
+		each item in ['Каток «Молодежка»','Каток «Спорт Станция»','Каток «МСА Лужники»']
+			.popup-group__item 
+				b.popup-group__locname= item 
+				a.popup-group__locroute(href="#") Проложить маршрут 
+
+#group2.popup.popup-group
+	.popup__title Группа выходного дня
+	ul.popup__list 
+		each item in ['для детей любого уровня подготовки','2 ледовые тренировки в выходные дни','2 тренировки по общей и специальной физической подготовке','участие в тестах и зачетах школы','открытые тренировки для родителей']
+			li= item
+	p.popup-group__text Тренировки проходят на ледовых катках:
+	.popup-group__locations 
+		each item in ['Каток «Спорт Станция»']
+			.popup-group__item 
+				b.popup-group__locname= item 
+				a.popup-group__locroute(href="#") Проложить маршрут 
+
+-
+	const table0 = [
+		{list: ['Понедельник «МСА Лужники»', '17:00-17:45', '18:00-19:00']},
+		{list: ['Среда «МСА Лужники»',       '17:00-17:45', '18:00-19:00']},
+		{list: ['Суббота ЛК «Молодежка»',    '18:15-19:15', '19:30-21:00']},
+		{list: ['Воскресенье ЛК «Молодежка»','16:30-17:30', '17:45-18:45']}
+	]
+	const table1 = [
+		{list: ['Понедельник «МСА Лужники»', '17:00-17:45', '-',           '18:00-19:00']},
+		{list: ['Среда «МСА Лужники»',       '17:00-17:45', '-',           '18:00-19:00']},
+		{list: ['Суббота ЛК «Молодежка»',    '-',           '10:00-11:00', '11:15-12:15']},
+		{list: ['Воскресенье ЛК «Молодежка»','-',           '10:00-11:00', '11:15-12:15']}
+	]
+	const table2 = [
+		{list: ['Суббота ЛК «Молодежка»',     '10:00-11:00', '11:15-12:15']},
+		{list: ['Воскресенье ЛК «Молодежка»', '10:00-11:00', '11:15-12:15']}
+	]
+	const table3 = [
+		{list: ['Вторник ЛК «Буревестник»', '18:15-19:15']},
+		{list: ['Четверг ЛК «Буревестник»', '18:15-19:15']}
+	]
+	const table4 = [
+		{list: ['Понедельник «МСА Лужники»',  '17:00-17:45', '-',           '18:00-19:00']},
+		{list: ['Среда «МСА Лужники»',        '17:00-17:45', '-',           '18:00-19:00']},
+		{list: ['Суббота ЛК «Молодежка»',     '-',           '18:15-19:15', '19:30-21:00']},
+		{list: ['Воскресенье ЛК «Молодежка»', '-',           '16:30-17:30', '17:45-18:45']}
+	]
+	const table5 = [
+		{list: ['Понедельник «МСА Лужники»',      '17:00-17:45', '-',           '18:00-19:00']},
+		{list: ['Среда «МСА Лужники»',            '17:00-17:45', '-',           '18:00-19:00']},
+		{list: ['Суббота ЛК «Спорт Станция»',     '-',           '10:00-11:00', '11:15-12:15']},
+		{list: ['Воскресенье ЛК «Спорт Станция»', '-',           '10:00-11:00', '11:15-12:15']}
+	]
+	const table6 = [
+		{list: ['Понедельник «МСА Лужники»', '18:15-19:15']},
+		{list: ['Среда «МСА Лужники»',       '18:15-19:15']}
+	]
+
+#timetable0.popup.popup-timetable 
+	.popup-timetable__title Расписание занятий
+
+	.popup-timetable__objects
+
+		.popup-timetable__object
+
+			.popup-timetable__objectname Ледовый каток «Молодёжка»
+			p.popup-timetable__status *СГ 2 (3 юношеский, 2 юношеский разряд), *СГ 4 (3 спортивный -1 спортивный разряд)
+			.popup-timetable__table.table
+				table 
+					thead
+						tr
+							each item in ['День и место проведения', 'Разминка', 'Лед']
+								th= item
+					tbody
+						each item in table0 	
+							tr 
+								each elem, i in item.list 
+									if(i === 0)
+										td.align-left= elem
+									else 
+										td= elem
+			p.popup-timetable__info *СГ (Спортивная группа), *ОГ (Оздоровительная группа)
+			.popup-timetable__price 
+				p.popup-timetable__pricetext Стоимость абонемента:
+				.popup-timetable__priceitem 
+					.popup-timetable__priceval *СГ 2 от 27 500 р./ 16 тренировок в месяц
+					button.popup-timetable__record(data-fancybox="price" data-src="#record") Записаться на тренировку
+				.popup-timetable__priceitem 
+					.popup-timetable__priceval *СГ 4 от 16 700 р./ 8 тренировок в месяц
+					button.popup-timetable__record(data-fancybox="price" data-src="#record") Записаться на тренировку
+
+#timetable1.popup.popup-timetable 
+	.popup-timetable__title Расписание занятий
+
+	.popup-timetable__objects
+
+		.popup-timetable__object
+			.popup-timetable__objectname Ледовый каток «Спорт Станция»
+			p.popup-timetable__status *СГ 3 (3 юношеский- 1 юношеский разряд). *СГ 1(юный фигурист)
+			.popup-timetable__table.table
+				table 
+					thead
+						tr
+							each item in ['День и место проведения', 'Разминка', 'Зал', 'Лед']
+								th= item
+					tbody
+						each item in table1 	
+							tr 
+								each elem, i in item.list 
+									if(i === 0)
+										td.align-left= elem
+									else 
+										td= elem
+			p.popup-timetable__info *СГ (Спортивная группа), *ОГ (Оздоровительная группа)
+			.popup-timetable__price 
+				p.popup-timetable__pricetext Стоимость абонемента:
+				.popup-timetable__priceitem 
+					.popup-timetable__priceval *СГ 3 от 24 800 р./16 тренировок в месяц
+					button.popup-timetable__record(data-fancybox="price" data-src="#record") Записаться на тренировку
+				.popup-timetable__priceitem 
+					.popup-timetable__priceval *СГ 1 от 24 800 р./16 тренировок в месяц
+					button.popup-timetable__record(data-fancybox="price" data-src="#record") Записаться на тренировку
+			
+		.popup-timetable__object
+			.popup-timetable__objectname Ледовый каток «Спорт Станция»
+			p.popup-timetable__status *ОГ (1- 5 год обучения)
+			.popup-timetable__table.table
+				table 
+					thead
+						tr
+							each item in ['День и место проведения', 'Разминка', 'Лед']
+								th= item
+					tbody
+						each item in table2 	
+							tr 
+								each elem, i in item.list 
+									if(i === 0)
+										td.align-left= elem
+									else 
+										td= elem
+			p.popup-timetable__info *СГ (Спортивная группа), *ОГ (Оздоровительная группа)
+			.popup-timetable__price 
+				p.popup-timetable__pricetext Стоимость абонемента:
+				.popup-timetable__priceitem 
+					.popup-timetable__priceval от 10 800 р./8 тренировок в месяц
+					button.popup-timetable__record(data-fancybox="price" data-src="#record") Записаться на тренировку
+
+#timetable2.popup.popup-timetable 
+	.popup-timetable__title Расписание занятий
+
+	.popup-timetable__objects
+
+		.popup-timetable__object
+			.popup-timetable__objectname Ледовый каток «Буревестник»
+			p.popup-timetable__status ОГ - Оздоровительная группа (1 год обучения)
+			.popup-timetable__table.table
+				table 
+					thead
+						tr
+							each item in ['День и место проведения', 'Лед']
+								th= item
+					tbody
+						each item in table3 	
+							tr 
+								each elem, i in item.list 
+									if(i === 0)
+										td.align-left= elem
+									else 
+										td= elem
+			p.popup-timetable__info *СГ (Спортивная группа), *ОГ (Оздоровительная группа)
+			.popup-timetable__price 
+				p.popup-timetable__pricetext Стоимость абонемента:
+				.popup-timetable__priceitem 
+					.popup-timetable__priceval от 10 800 р./8 тренировок в месяц
+					button.popup-timetable__record(data-fancybox="price" data-src="#record") Записаться на тренировку
+		
+		.popup-timetable__object
+			.popup-timetable__objectname Ледовый каток «Буревестник»
+			p.popup-timetable__status Группа для взрослых
+			.popup-timetable__table.table
+				table 
+					thead
+						tr
+							each item in ['День и место проведения', 'Лед']
+								th= item
+					tbody
+						each item in table3 	
+							tr 
+								each elem, i in item.list 
+									if(i === 0)
+										td.align-left= elem
+									else 
+										td= elem
+			p.popup-timetable__info *СГ (Спортивная группа), *ОГ (Оздоровительная группа)
+			.popup-timetable__price 
+				p.popup-timetable__pricetext Стоимость абонемента:
+				.popup-timetable__priceitem 
+					.popup-timetable__priceval от 10 800 р./8 тренировок в месяц
+					button.popup-timetable__record(data-fancybox="price" data-src="#record") Записаться на тренировку
+
+#timetable3.popup.popup-timetable 
+	.popup-timetable__title Расписание занятий
+
+	.popup-timetable__objects
+
+		.popup-timetable__object
+			.popup-timetable__objectname Ледовый каток «МСА Лужники»
+			p.popup-timetable__status *СГ 2 (3 юношеский, 2 юношеский разряд), *СГ 4 (3 спортивный -1 спортивный разряд)
+			.popup-timetable__table.table
+				table 
+					thead
+						tr
+							each item in ['День и место проведения', 'Разминка', 'Зал', 'Лед']
+								th= item
+					tbody
+						each item in table4 	
+							tr 
+								each elem, i in item.list 
+									if(i === 0)
+										td.align-left= elem
+									else 
+										td= elem
+			p.popup-timetable__info *СГ (Спортивная группа), *ОГ (Оздоровительная группа)
+			.popup-timetable__price 
+				p.popup-timetable__pricetext Стоимость абонемента:
+				.popup-timetable__priceitem 
+					.popup-timetable__priceval *СГ 2 от 27 500 р./ 16 тренировок в месяц
+					button.popup-timetable__record(data-fancybox="price" data-src="#record") Записаться на тренировку
+				.popup-timetable__priceitem 
+					.popup-timetable__priceval *СГ 4 от 16 700 р./ 8 тренировок в месяц
+					button.popup-timetable__record(data-fancybox="price" data-src="#record") Записаться на тренировку
+		
+		.popup-timetable__object
+			.popup-timetable__objectname Ледовый каток «МСА Лужники»
+			p.popup-timetable__status *СГ 3 (3 юношеский- 1 юношеский разряд). *СГ 1(юный фигурист)
+			.popup-timetable__table.table
+				table 
+					thead
+						tr
+							each item in ['День и место проведения', 'Разминка', 'Зал', 'Лед']
+								th= item
+					tbody
+						each item in table5 	
+							tr 
+								each elem, i in item.list 
+									if(i === 0)
+										td.align-left= elem
+									else 
+										td= elem
+			p.popup-timetable__info *СГ (Спортивная группа), *ОГ (Оздоровительная группа)
+			.popup-timetable__price 
+				p.popup-timetable__pricetext Стоимость абонемента:
+				.popup-timetable__priceitem 
+					.popup-timetable__priceval *СГ 3 от 24 800 р./16 тренировок в месяц
+					button.popup-timetable__record(data-fancybox="price" data-src="#record") Записаться на тренировку
+				.popup-timetable__priceitem 
+					.popup-timetable__priceval *СГ 1 от 24 800 р./16 тренировок в месяц
+					button.popup-timetable__record(data-fancybox="price" data-src="#record") Записаться на тренировку
+
+		.popup-timetable__object 
+			.popup-timetable__objectname Ледовый каток «МСА Лужники»
+			p.popup-timetable__status *ОГ (2 год обучения)
+			.popup-timetable__table.table
+				table 
+					thead
+						tr
+							each item in ['День и место проведения', 'Лед']
+								th= item
+					tbody
+						each item in table6 	
+							tr 
+								each elem, i in item.list 
+									if(i === 0)
+										td.align-left= elem
+									else 
+										td= elem
+			p.popup-timetable__info *СГ (Спортивная группа), *ОГ (Оздоровительная группа)
+			.popup-timetable__price 
+				p.popup-timetable__pricetext Стоимость абонемента:
+				.popup-timetable__priceitem 
+					.popup-timetable__priceval от 10800 р./8 тренировок в месяц
+					button.popup-timetable__record(data-fancybox="price" data-src="#record") Записаться на тренировку

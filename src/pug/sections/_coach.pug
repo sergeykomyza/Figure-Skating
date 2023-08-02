@@ -1,0 +1,20 @@
+-
+	const coach = [
+		{name: 'Горшкова К. В.',     status: 'Дипломированный тренер',                    text: 'Тренер спортивной группы юношеских разрядов. (СГ 3), оздоровительных групп', foto: 'trener-1.webp', fotoMob: 'trener-mob-1.webp'},
+		{name: 'Альпидовская С. Г.', status: 'Тренер-преподаватель по фигурному катанию', text: 'Тренер спортивной группы (СГ 2), оздоровительных групп',                     foto: 'trener-2.webp', fotoMob: 'trener-mob-2.webp'},
+		{name: 'Карпова О. Г.',      status: 'Дипломированный тренер',                    text: 'Тренер оздоровительных групп и спортивной группы (СГ 1)',                    foto: 'trener-3.webp', fotoMob: 'trener-mob-3.webp'}
+	]
+
+section.coach#coach
+	.container 
+		h6.title.coach__title Посмотрите на наш #[b тренерский состав]
+		.coach__box 
+			each item in coach 
+				.coach__item
+					.coach__info 
+						.coach__name= item.name 
+						p.coach__status= item.status 
+						p.coach__text= item.text
+					picture
+						source(media="(max-width: 565px)", srcset="img/" + item.fotoMob)
+						img.coach__foto(src="img/" + item.foto, alt="@")

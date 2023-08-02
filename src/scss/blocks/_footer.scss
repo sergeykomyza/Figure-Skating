@@ -1,0 +1,39 @@
+.footer{
+	padding: 18px 0;
+	background: #071117;
+	&__box{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media(max-width: 850px){
+			flex-direction: column;
+			gap: 50px;
+		}
+	}
+	&__links{
+		display: flex;
+		gap: 30px;
+		@media(max-width: 565px){
+			flex-direction: column;
+			gap: 20px;
+		}
+		a{
+			font-size: 10px;
+			color: #FFF;
+			text-decoration: underline;
+		}
+	}
+}
+
+.dev{
+	display: flex;
+	align-items: center;
+	&__text{
+		margin-right: 10px;
+		font-size: 12px;
+		color: #FFF;
+	}
+	&__logo{
+		margin-top: 5px;
+	}
+}

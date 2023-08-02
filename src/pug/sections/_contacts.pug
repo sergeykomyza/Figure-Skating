@@ -1,0 +1,17 @@
+section.contacts#contacts 
+	.contacts__box 
+		.container 
+			.contacts-data 
+				h6.title.contacts-data__title #[b Контакты] школы
+				.contacts-data__name Телефон
+				a.contacts-data__phone(href="tel:+79250837222") +7 (925) 083-72-22
+				.contacts-data__name Почта
+				a.contacts-data__email(href="mailto:xkonek-eis@yandex.ru") xkonek-eis@yandex.ru
+				.contacts-data__name Время работы
+				span.contacts-data__timetable Ежедневно с 09:00 до 18:00
+				.contacts-data__name Соц. сети
+				.contacts-social 
+					each item in ['icon-whatsapp.svg','icon-telegram.svg','icon-youtube.svg']
+						a.contacts-social__link(href="#")
+							img.contacts-social__icon(src="img/" + item, alt="@") 
+		.contacts__map#map

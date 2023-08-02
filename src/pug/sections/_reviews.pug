@@ -1,0 +1,24 @@
+section.reviews 
+	.container
+		p.reviews__overtitle Почитайте отзывы о школе и успехах детей
+		h6.title.reviews__title Вы будете #[b гордиться своим ребенком]
+		.reviews__box
+			.swiper.js-sliderReviews  
+				.swiper-wrapper
+					each item in [1, 2, 3, 4, 5, 6]
+						.review.swiper-slide
+							.review__inner
+								.review__headbox 
+									figure.review__avabox 
+										img.review__foto(src="img/ava-1.png", alt="@")
+									.review__namebox 
+										span.review__author Анна Авгутова
+										span.review__status Дочка Карина, 7 лет
+								.review__text
+									.review__visible.js-reviewVisible
+										p У меня, как у искусствоведа, нет личного опыта занятий фигурным катанием и обучения с тренером. Однако, я могу описать, какие качества должен обладать хороший тренер фигурного катания.
+									.review__hidden.js-reviewHidden 
+										p У меня, как у искусствоведа, нет личного опыта занятий фигурным катанием и обучения с тренером. Однако, я могу описать, какие качества должен обладать хороший тренер фигурного катания.
+								button.review__toggle.js-reviewToggle Читать отзыв
+				.swiper-pagination
+		button.button.reviews__button Оставить отзыв

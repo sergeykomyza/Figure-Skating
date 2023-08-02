@@ -1,0 +1,80 @@
+include ./../mixins/_mixin.pug
+
+-
+	const menu = [
+		{link: '#about', text: 'О школе '},
+		{link: '#locations', text: 'Катки'},
+		{link: '#groups', text: 'Услуги'},
+		{link: '#coach', text: 'Наши тренеры'},
+		{link: '#', text: 'Новости'},
+		{link: '#gallery', text: 'Фотогалерея'},
+		{link: '#contacts', text: 'Контакты'}
+	]
+
+header.header
+	
+	.header__inner
+		.container 
+			.header__box 
+				
+				.logo 
+					img.logo__img(src="img/logo.svg", alt="@")
+					.logo__text 
+						b.logo__name Хрустальный конек
+						span.logo__info Спортивная школа по #[br] фигурному катанию
+
+				.header-connect.header__connect
+					.header-connect__text 
+						b.header-connect__title Есть вопрос ?
+						span.header-connect__tagtitle Задайте online
+					.header-connect__social.social 
+						each item in ['icon-whatsapp.svg','icon-telegram.svg','icon-youtube.svg']
+							a.social__link(href="#")
+								img.social__icon(src="img/" + item, alt="@") 
+
+				.header-email.header__email 
+					span.header-email__name Пишите нам
+					a.header-email__adress(href="mailto:xkonek-eis@yandex.ru") xkonek-eis@yandex.ru
+
+				.header-phone.header__phone
+					span.header-phone__name Ежедневно с 09:00 до 18:00
+					a.header-phone__number(href="+79250837222") +7 (925) 083-72-22
+
+				.header__burger.js-mMenuOpen 
+					.burger
+						each span in [1, 2, 3]
+							span
+
+	nav.nav.js-mMenu
+		.nav__menu
+			
+			.nav__head 
+				.nav-logo 
+					img.nav-logo__img(src="img/logo.svg", alt="@")
+					.nav-logo__text
+						b.nav-logo__name Хрустальный конек
+						span.nav-logo__info Спортивная школа по #[br] фигурному катанию
+				button.nav__close.js-mMenuClose 
+					img(src="img/icon-close.svg", alt="@")
+
+			ul.nav__list
+				each item in menu 
+					li.nav__item 
+						a.nav__link.js-scrollToSection(href=`${item.link}`)= item.text 
+			
+			.header-phone.nav__phone
+				span.header-phone__name Ежедневно с 09:00 до 18:00
+				a.header-phone__number(href="+79250837222") +7 (925) 083-72-22
+
+			.header-email.nav__email 
+				span.header-email__name Пишите нам
+				a.header-email__adress(href="mailto:xkonek-eis@yandex.ru") xkonek-eis@yandex.ru 
+
+			.header-connect.nav__connect
+				.header-connect__text 
+					b.header-connect__title Есть вопрос ?
+					span.header-connect__tagtitle Задайте online
+				.header-connect__social.social 
+					each item in ['icon-whatsapp.svg','icon-telegram.svg','icon-youtube.svg']
+						a.social__link(href="#")
+							img.social__icon(src="img/" + item, alt="@") 
